@@ -1,0 +1,39 @@
+<!-- <div class="col-12">
+  <div class="col-4" *ngFor="let product of productList">
+    <mat-card class="example-card">
+      <mat-card-header class="card-container">
+        <mat-card-title class="card-container-left" >{{product.name}}t</mat-card-title>
+      
+        <mat-card-title class="card-container-right">{{product.description}}</mat-card-title>
+       
+      </mat-card-header>
+      <mat-card-header class="card-container">
+       
+         <mat-card-title class="card-container-left" >Test left</mat-card-title>
+        <mat-card-title class="card-container-right"><button>Buy now</button></mat-card-title>
+        
+      </mat-card-header>  
+    </mat-card>
+    <br>
+  </div>
+</div> -->
+
+<div *ngFor="let product of productList">
+<mat-card>
+  <mat-card-header class="card-container" >
+    <mat-card-title class="card-container-left" >{{product.name}}</mat-card-title>
+        <mat-card-title class="card-container-right">Price : {{product.unitPrice}} AUD</mat-card-title>
+  </mat-card-header>
+  <mat-card-header class="card-container" >
+    <mat-card-title class="card-container-left" >{{product.description}}</mat-card-title>
+        <mat-card-title class="card-container-right">
+          <button mat-raised-button color="primary">Buy Now</button>
+        </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+  </mat-card-content>
+</mat-card>
+<br>
+</div>
+
+
